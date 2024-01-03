@@ -28,10 +28,10 @@ body {
   font-weight: 700;
   background: lavender;
   width: 42px;
-  height: 42px;
+  /* height: 42px; */
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -67,3 +67,24 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* solution */
+
+.modal {
+  display: flex;
+  /* gap: 16px;
+  padding: 16px; */
+}
+
+.header {
+  display: flex; 
+  /* justify-content: space-between;
+  align-items: center;  */
+}
+
+.icon {
+  /* this keeps the icon from getting smashed by the text */
+  /* flex-shrink: 0; */
+}
+
+
