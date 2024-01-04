@@ -26,4 +26,45 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  height: 200px;
+  width: 300px
+}
+
+/* Solution */
+
+body {
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sidebar-card-container {
+  display: flex;
+}
+
+.card-content {
+  display: flex;
+  /* flex-direction: column; */
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 25px
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
